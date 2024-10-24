@@ -30,7 +30,7 @@ class ListMarkerOutline(bpy.types.Operator):
       markers = scene.timeline_markers
       markers = sorted(markers, key=lambda item: item.frame)
 
-      outline_string = "Content\n"
+      outline_string = "Outline\n"
       for marker in markers:
         frame = marker.frame
         if frame > bpy.context.scene.frame_end or frame < bpy.context.scene.frame_start:
